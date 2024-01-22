@@ -272,7 +272,6 @@ a.sort-by:after {
 					<h:outputText value="#{p.lastName}" />
 				</h:column>
 
-
 				<h:column>
 					<f:facet name="header">
 						<h:outputLabel value="ReviewDate" />
@@ -363,7 +362,7 @@ a.sort-by:after {
 		function showLoader() {
 			document.getElementById('loader').style.display = 'block';
 		}
-		
+
 	</script>
 </body>
 	</html>

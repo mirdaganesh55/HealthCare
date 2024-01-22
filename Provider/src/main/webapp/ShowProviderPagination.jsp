@@ -389,7 +389,16 @@ a.sort-by:after {
 					</f:facet>
 					<h:outputText value="#{p.speciality}" />
 				</h:column>
-				
+
+				<h:column>
+					<f:facet name="header">
+						<h:outputLabel value="ReviewDate" />
+					</f:facet>
+					<h:outputText value="#{p.reviewDate}">
+						<f:convertDateTime pattern="yyyy-MM-dd" />
+					</h:outputText>
+				</h:column>
+
 			</h:dataTable>
 
 			<div class="center-container">
