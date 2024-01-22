@@ -44,7 +44,9 @@ public class ProviderDetailsDAOImpl implements ProviderDetailsDAO {
 		System.out.println("Saerch "+providerList);
 		ProviderDetails provider = providerList.get(0);
 		sessionMap.put("editProvider", provider);
+		System.err.println(provider);
 		return"UpdateProviderDetails.jsp?faces-redirect=true";
+		
 	}
 
 	@Override
