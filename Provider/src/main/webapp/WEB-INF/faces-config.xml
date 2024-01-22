@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config xmlns="http://java.sun.com/xml/ns/javaee" 
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+              xsi:schemaLocation="http://java.sun.com/xml/ns/javaee /WEB-INF/schema/web-facesconfig_2_0.xsd" 
+              version="2.0" metadata-complete="false">
+    <!-- This file must be present with our jar, even if it is empty.  Otherwise, our Java annotations won't get scanned! -->
+<managed-bean>
+	<managed-bean-name>provider</managed-bean-name>
+   <managed-bean-class>com.java.hib.Provider</managed-bean-class>
+   <managed-bean-scope>request</managed-bean-scope>
+</managed-bean>
+<managed-bean>
+	<managed-bean-name>providerImpl</managed-bean-name>
+   <managed-bean-class>com.java.hib.ProviderDAOImpl</managed-bean-class>
+   <managed-bean-scope>request</managed-bean-scope>
+</managed-bean>
+<managed-bean>
+	<managed-bean-name>paginationDao</managed-bean-name>
+    <managed-bean-class>com.java.hib.JsfPaginationBean</managed-bean-class>
+    <managed-bean-scope>request</managed-bean-scope>
+</managed-bean>
+<managed-bean>
+	<managed-bean-name>paginationDaoR</managed-bean-name>
+    <managed-bean-class>com.java.hib.JsfPaginationRejBean</managed-bean-class>
+    <managed-bean-scope>request</managed-bean-scope>
+</managed-bean>
+<managed-bean>
+	<managed-bean-name>paginationDaoA</managed-bean-name>
+    <managed-bean-class>com.java.hib.JsfPaginationAppBean</managed-bean-class>
+    <managed-bean-scope>request</managed-bean-scope>
+</managed-bean>
+<managed-bean>
+	<managed-bean-name>paginationDaoP</managed-bean-name>
+    <managed-bean-class>com.java.hib.JsfPaginationPendBean</managed-bean-class>
+    <managed-bean-scope>request</managed-bean-scope>
+</managed-bean>
+
+
+<managed-bean>
+		<managed-bean-name>adminDao</managed-bean-name>
+		<managed-bean-class>com.java.hib.AdminLoginImpl</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>admin</managed-bean-name>
+		<managed-bean-class>com.java.hib.AdminLogin
+		</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>admin2</managed-bean-name>
+		<managed-bean-class>com.java.hib.Admin_auth</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+	<managed-bean-name>admindetails</managed-bean-name>
+   <managed-bean-class>com.java.hib.Admin_Details</managed-bean-class>
+   <managed-bean-scope>request</managed-bean-scope>
+</managed-bean>
+<managed-bean>
+	<managed-bean-name>daoImp</managed-bean-name>
+   <managed-bean-class>com.java.hib.Admindaoimpl</managed-bean-class>
+   <managed-bean-scope>request</managed-bean-scope>
+</managed-bean>
+<managed-bean>
+	<managed-bean-name>controller</managed-bean-name>
+   <managed-bean-class>com.java.hib.Controller</managed-bean-class>
+   <managed-bean-scope>request</managed-bean-scope>
+</managed-bean>
+<managed-bean>
+	<managed-bean-name>reset</managed-bean-name>
+   <managed-bean-class>com.java.hib.AdminReset</managed-bean-class>
+   <managed-bean-scope>request</managed-bean-scope>
+</managed-bean>
+	 <managed-property>
+			<property-name>adminDao</property-name>
+			<property-class>com.java.hib.AdminLoginImpl</property-class>
+			<value>#{adminDao}</value>
+		</managed-property>
+<managed-bean>
+		<managed-bean-name>adminController</managed-bean-name>
+		<managed-bean-class>com.java.hib.AdminController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>admin</property-name>
+			<property-class>com.java.hib.AdminLogin</property-class>
+			<value>#{admin}</value>
+		</managed-property>
+		
+		<managed-bean>
+	<managed-bean-name>providerDao</managed-bean-name>
+	<managed-bean-class>com.java.hib.ProviderDAOImplJ</managed-bean-class>
+	<managed-bean-scope>request</managed-bean-scope>
+		</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>providerJ</managed-bean-name>
+		<managed-bean-class>com.java.hib.ProviderJ</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>paginationDaoJ</managed-bean-name>
+		<managed-bean-class>com.java.hib.JsfPaginationBeanJ</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>daoImpl</managed-bean-name>
+		<managed-bean-class>com.java.hib.ProviderDetailsDAOImpl</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>providerController</managed-bean-name>
+		<managed-bean-class>com.java.hib.ProviderController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>providerDetails</managed-bean-name>
+		<managed-bean-class>com.java.hib.ProviderDetails</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>prvdCrontroller</managed-bean-name>
+		<managed-bean-class>com.java.hib.ProviderController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>providerDetails</property-name>
+			<property-class>com.java.hib.ProviderDetails</property-class>
+			<value>#{providerDetails}</value>
+		</managed-property>
+		
+		<managed-property>
+			<property-name>daoImpl</property-name>
+			<property-class>com.java.hib.ProviderDetailsDAOImpl</property-class>
+			<value>#{daoImpl}</value>
+		</managed-property>
+		<managed-bean>
+	<managed-bean-name>paginationDaoo</managed-bean-name>
+    <managed-bean-class>com.java.hib.ProviderPeginationbean</managed-bean-class>
+    <managed-bean-scope>request</managed-bean-scope>
+</managed-bean>
+	</managed-bean>
+
+</managed-bean>
+</faces-config>

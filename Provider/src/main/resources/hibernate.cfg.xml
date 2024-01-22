@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">Infinite@2023</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/healthcare</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.validator.apply_to_ddl"/>
+        <mapping resource="com/java/hib/Provider.hbm.xml"/>
+        <mapping resource="com/java/hib/Doctor.hbm.xml"/>
+        <mapping resource="com/java/hib/AdminLogin.hbm.xml"/>
+        <mapping resource="com/java/hib/Admin_Details.hbm.xml"/>
+       	<mapping resource="com/java/hib/Admin_auth.hbm.xml"/>
+        <mapping resource="com/java/hib/Admin_pass.hbm.xml"/>
+        <mapping resource="com/java/hib/AdminReset.hbm.xml"/>
+        <mapping resource="com/java/hib/ProviderJ.hbm.xml" />
+        <mapping resource="com/java/hib/ProviderDetails.hbm.xml"/>
+        
+    </session-factory>
+</hibernate-configuration>

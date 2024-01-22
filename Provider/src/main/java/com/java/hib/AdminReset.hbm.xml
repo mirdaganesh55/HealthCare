@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Nov 7, 2023, 9:34:53 AM by Hibernate Tools 3.6.2.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="com.java.hib.AdminReset" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="ADMINRESET">
+        <id name="old_password" type="java.lang.String">
+            <column name="OLD_PASSWORD"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="new_password" optimistic-lock="true" type="java.lang.String" unique="false">
+            <column name="NEW_PASSWORD"/>
+        </property>
+        
+    </class>
+</hibernate-mapping>

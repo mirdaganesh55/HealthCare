@@ -1,0 +1,71 @@
+@charset "ISO-8859-1";
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #1446628c;
+}
+body {
+    background-image: url("image.png");
+    background-size: cover;
+	height: 650px;
+}
+
+
+.h {
+	 padding: 10px;
+    text-align: center;
+}
+
+.form{
+	width: 50%;
+    margin: 0 auto;
+    background-color: #ffffffb0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: math;
+}
+
+label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.input_back{
+	width: 100%;
+	padding: 0px;
+	margin-bottom: 16px; 
+	box-sizing: border-box;
+	text-align: left;
+	margin-top: 10px;
+	height: auto;
+	margin-left: 29%;
+}
+
+.error-message{
+	color: rgba(255, 0, 0, 0.979);
+	 font-weight: bold;
+    margin-top: 5px;
+}
+
+/* .menu{
+	width: 100%;
+	padding: 0px;
+	box-sizing: border-box;
+	text-align: left;
+	margin-bottom: 10px;
+} */
+
+.com{
+	color: rgba(255, 255, 255, 0.61);
+	padding: 10px 15px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 16px;
+	
+}
+.com:hover {
+	background-color: #06aeff;
+}
